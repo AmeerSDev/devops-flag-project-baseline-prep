@@ -33,9 +33,7 @@ infra/
       user-data.sh      # Bootstrap script for EC2
 config/
   ansible/
-    inventory/          # Ansible inventory
-    playbooks/
-      site.yml          # Example playbook (optional)
+      user-data-ansible.sh # script to deploy the midterm project
 docs/
   ARCHITECTURE.md       # High-level system overview
 scripts/
