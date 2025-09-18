@@ -6,7 +6,6 @@ resource "aws_instance" "North_Virginia-Public1-VM" {
   key_name = aws_key_pair.North_VirginiaKP.key_name
   vpc_security_group_ids = [aws_security_group.ansible_sg.id]
   subnet_id = aws_subnet.North_Virginia-Public-Subnet-1.id
-  # user_data = file("${path.module}/user-data-ansible.yaml")
   user_data = local.ansible_install_user_data
 
   tags = {
